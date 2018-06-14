@@ -1,10 +1,10 @@
 require 'sinatra'
 require 'twilio-ruby'
 
-get '/' do
-	content_type 'text/xml'
+get '/sms-quickstart' do
+	twiml = Twilio::TwiML::MessagingResponse.new do |r|
+		r.message(body: 'Ahoy! Thanks so much for your message.')
+	end
 
-	Twilio::TwiML::VoiceResponse.new do | response |
-		response.say('Hello World')
-	end.to_s
+	twiml.to_s
 end
