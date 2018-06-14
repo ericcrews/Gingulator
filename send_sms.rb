@@ -5,7 +5,7 @@ auth_token = '6e79d9a036c11ecdac4b91e1a1672e07'
 client = Twilio::REST::Client.new(account_sid, auth_token)
 
 from = '+13133074476' # Twilio number
-to = '+17346356711' # My mobile phone number
+to = ARGV[0] # Your mobile phone number (from the command line)
 
 client.messages.create(
 	from: from,
