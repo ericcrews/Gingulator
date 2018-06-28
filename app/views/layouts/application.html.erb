@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HF Application Information</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	<nav>
+		<ul>
+			<li>
+				<%= link_to 'Home Page', app_infos_path %>
+			</li>
+		</ul>
+	</nav>
+    <%= yield %>
+  </body>
+</html>

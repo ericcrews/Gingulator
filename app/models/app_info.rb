@@ -1,0 +1,2 @@
+class AppInfo < ApplicationRecord
+end

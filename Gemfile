@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+#changed 2.5.1 -> 2.4.4 for compatibility (DK) 
+ruby '2.4.4' 
 
 # Twilio SMS
 gem 'twilio-ruby'
@@ -17,6 +18,10 @@ gem 'puma', '~> 3.11'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 0.18'
+# Materialize gem for design
+gem 'materialize-sass', '~> 1.0.0.rc2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
