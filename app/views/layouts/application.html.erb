@@ -6,8 +6,9 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	
   </head>
-
+  
   <body>
 	<nav>
 		<ul>
@@ -16,6 +17,8 @@
 			</li>
 		</ul>
 	</nav>
-    <%= yield %>
+	<div class="container">
+		<%= yield %>
+	</div>
   </body>
 </html>
