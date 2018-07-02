@@ -8,6 +8,7 @@ class AppInfosController < ApplicationController
 
   # GET /app_infos/1
   def show
+	@app_info = AppInfo.find(params[:id])
   end
 
   # POST /app_infos
@@ -32,7 +33,13 @@ class AppInfosController < ApplicationController
 
   # DELETE /app_infos/1
   def destroy
+	@app_info = AppInfo.find(params[:id])
     @app_info.destroy
+	
+	respond_to do |format|
+      format.html { redirect_to app_infos_url, notice: 'Candidate was successfully destroyed.' }
+      format.json { head :no_content }
+    end
   end
 
   private

@@ -2,11 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-table {
-	background-color: #F5F5DC;
-	border-radius: 10px;
-	width: 1096px;
-	margin: 0 auto;
-	border-spacing: 0px;
-	border-bottom: 1px solid #ddd;
+.cards-container {
+  column-break-inside: avoid;
+  .card {
+    display: inline-block;
+    overflow: visible;
+  }
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.card-small {
+     width:400px;
 }
