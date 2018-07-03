@@ -10,14 +10,15 @@
   
   <body>
 	<nav>
-		<ul>
-			<li>
-				<%= link_to 'Home Page', app_infos_path %>
-			</li>
-		</ul>
+		<div class="nav-wrapper">
+		  <img class="brand-logo" src="https://media.creativemornings.com/uploads/user/avatar/273045/Screen_Shot_2016-10-18_at_12.21.03_PM.png">
+		  <ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li><%= link_to 'Home Page', app_infos_path %> </li>
+			<li> Func2 </li>
+			<li> Func3 </li>
+		  </ul>
+		</div>
 	</nav>
-	<div class="container">
-		<%= yield %>
-	</div>
+	<%= yield %>
   </body>
 </html>

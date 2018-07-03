@@ -5,28 +5,28 @@
 <div>
 	<h2 class="center-align">Applicant Profiles</h2>
 </div>
-
-<div class="cards-container">
-	<% @app_infos.each do |app_info| %>
-		<a href="/app_infos/<%= app_info.id %>">
-			<div class="col s4">
-			  <div class="card small">
-				<div class="card-image">
-				  <img src="HF_generic.png">
-				  <span class="card-title">	<%= app_info.first_name %></span>
+<div class="row">
+	<div class="cards-container">
+		<% @app_infos.each do |app_info| %>
+			<a href="/app_infos/<%= app_info.id %>">
+				<div class="col s4">
+				  <div class="card small">
+					<div class="card-image">
+					  <img class="responsive-img" src="https://pbs.twimg.com/profile_images/992829082420232192/UvlAP299_400x400.jpg" alt="Hacker Fellows photo">
+					  <span class="card-title">	<strong> <%= app_info.first_name %> <%= app_info.last_name %> </strong> </span>
+					</div>
+					<div class="card-content">
+						<%= app_info.email %> <br>
+						<%= app_info.developer_type %> <br>
+						<%= app_info.hometown %> <br>
+					</div>
+				  </div>
 				</div>
-				<div class="card-content">
-					<%= app_info.first_name %> <br>
-					<%= app_info.email %> <br>
-					<%= app_info.developer_type %> <br>
-					<%= app_info.hometown %> <br>
-				</div>
-			  </div>
-			</div>
-		</a>
-	<% end %> 
+			</a>
+		<% end %> 
+	</div>
 </div>
 
-<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add fellow</i></a>
+<a class="btn-floating btn-large waves-effect waves-light grey"><i class="material-icons">add fellow</i></a>
 
 <br>
