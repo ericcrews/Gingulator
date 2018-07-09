@@ -83,5 +83,5 @@ production:
   <<: *default
   database: Gingulator_production
   username: Gingulator
+# password: 
 #change for production purposes 
-  password: <%= ENV['SHOPKEEPER_DATABASE_PASSWORD'] %>
