@@ -7,11 +7,18 @@ body {
   line-height: 18px;
 }
 
-p, ol, ul, td {
+p, ol, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #FFFFFF;
+}
+
+.nav-wrapper {
+  height: 100px;
+  margin: 20px 0 0 ;
+  padding: 10px 0;
+  border-radius: 50%;
 }
 
 .brand-logo {
@@ -26,10 +33,15 @@ h2 {
 
 nav { 
   background-color: #2b313f;
+  height: 100px;
   font-weight: bold;
   font-family: verdana, arial, helvetica, sans-serif;
   text-transform: uppercase;
   color: #FFFFFF;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 pre {
