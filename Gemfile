@@ -7,15 +7,6 @@ ruby '2.5.1'
 # Authentication
 gem 'devise'
 
-# Password hashing for authentication
-gem 'bcrypt', '~> 3.1.7'
-
-# Encoding and decoding JWT tokens
-gem 'jwt'
-
-# Create services with ease. Facilitates controller/model connection
-gem 'simple_command'
-
 # Twilio SMS
 gem 'twilio-ruby'
 # Easier HTTP Requests
