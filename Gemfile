@@ -7,6 +7,9 @@ ruby '2.5.1'
 # Password hashing for authentication
 gem 'bcrypt', '~> 3.1.7'
 
+# Encoding and decoding JWT tokens
+gem 'jwt'
+
 # Twilio SMS
 gem 'twilio-ruby'
 # Easier HTTP Requests

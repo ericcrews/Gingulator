@@ -169,6 +169,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   httparty
+  jwt
   listen (>= 3.0.5, < 3.2)
   materialize-sass (~> 1.0.0.rc2)
   pg (~> 0.18)
