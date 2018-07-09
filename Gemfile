@@ -4,6 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 #changed 2.5.1 -> 2.4.4 for compatibility (DK) 
 ruby '2.5.1' 
 
+# Authentication
+gem 'devise'
+
 # Password hashing for authentication
 gem 'bcrypt', '~> 3.1.7'
 
