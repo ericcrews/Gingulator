@@ -26,6 +26,11 @@ gem 'pg', '~> 0.18'
 # Materialize gem for design
 gem 'materialize-sass', '~> 1.0.0.rc2'
 
+
+# Use jquery as the Javascript library
+gem 'jquery-rails'
+# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+gem 'turbolinks', '~> 5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
