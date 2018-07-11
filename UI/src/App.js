@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 // Import Component
-import GingHead from './components/ginghead'
-import GingGreet from './components/ginggreet'
+import Header from './components/header'
+import Greet from './components/greeter'
 import Gingulator from './components/gingulator'
-import GingFoot from './components/gingfoot'
+import Footer from './components/footer'
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <GingHead />
-        <GingGreet />
+        <Header />
+        <Greet />
         <Gingulator />
-        <GingFoot/>
+        <Footer/>
       </div>
     );
   }

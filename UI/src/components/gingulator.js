@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-const GingHead = () => {
+const GBot = () => {
             return(
                   <div className='gingbot-wrapper'>
                       <iframe title="GingBot"
@@ -10,4 +10,4 @@ const GingHead = () => {
                   </div>
             )
       }
-export default GingHead
+export default GBot

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
 import Toolbar from '@material-ui/core/Toolbar'
-const GingFoot = () => {
+const Footer = () => {
             return(
                   <footer className="App-footer">
                         <Toolbar>
@@ -10,4 +10,4 @@ const GingFoot = () => {
                   </footer>
             )
       }
-export default GingFoot
+export default Footer

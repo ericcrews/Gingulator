@@ -1,6 +1,6 @@
 {
-  "name": "practice-app",
-  "description": "Sample react app to practice different designs, tools and concepts",
+  "name": "Gingulator-UI",
+  "description": "Gingulator Web UI, Built on React + Material-UI",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

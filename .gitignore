@@ -12,7 +12,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+/UI/node_modules
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
