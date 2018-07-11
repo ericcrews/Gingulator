@@ -14,6 +14,7 @@ class CreateAppInfos < ActiveRecord::Migration[5.2]
       t.string :why_startup, null: false
       t.string :fun_facts, null: false
       t.decimal :gpa, null: false
+	  t.string :resume, null: false
 
       t.timestamps
     end
