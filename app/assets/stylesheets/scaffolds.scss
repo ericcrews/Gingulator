@@ -1,3 +1,100 @@
+.cards-container {
+  align-content: center;
+}
+
+.column {
+  float: left;
+  padding: 20px 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.profile-card{
+  border-radius: 20px;
+  width: 600px;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  flex: 1;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+
+.profile-card header{
+  border-right: 1px solid #d32f2f ;
+  width: 100px;
+ 
+}
+
+.profile-card img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  border: 8px solid transparent;
+  transition: .4s;
+  }
+
+.profile-card img:hover{
+  border: 8px solid #e57373 ;
+}
+
+.profile-card h1{
+  font-family: 'Raleway', Arial;
+  font-size: 15px;
+  color: #2b313f ;
+  text-align: center;
+}
+
+.profile-card h2{
+  font-family: Arial;
+  font-size: 13px;
+  text-align: center;
+}
+
+.profile-bio{
+  border-radius: 0 20px 20px 0;
+  background-color: #2b313f ;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.profile-bio p{
+  color: white;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  margin: 30px;
+  margin-top: 70px;
+}
+
+.heart-icon{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  align-content: center; 
+}
+
+.fa-heart{
+  display: flex;
+  color: white;
+  font-size: 50px;
+  transition: .4s;
+  
+}
+
+.fa-heart:hover{
+  color: #d32f2f ;
+  transform: scale(1.2);
+}
 body {
   background-color: #010819;
   color: #333;
@@ -25,9 +122,11 @@ p, ol, td {
   width:70px;
   height: auto;
   border-radius: 50%;
-  padding:1px;
-  border:1px solid #FFFFFF;
+  padding:40px;
+  border:3px solid #FFFFFF;
   background-color:#ff0;
+  margin-left: 10px;
+  margin-top: 4px;
 }
 
 h2 {
@@ -115,4 +214,16 @@ div {
 
 label {
   display: block;
+}
+
+.fa.fa-home {
+	color: white;
+	font-size: 20px;
+    padding: 1.0px 1.0px;
+}
+
+.fa.fa-bars {
+	color: white;
+	font-size: 20px;
+    padding: 1.0px 1.0px;
 }

@@ -1,38 +1,48 @@
 <p id="notice"><%= notice %></p>
 
-<link rel="stylesheet/less" type="text/css" href="styles.less" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<div>
+	<h2 class="center-align">Applicant Profiles</h2>
+</div>
+
+<div class="cards-container">
+	<div class="row">
+		<% @app_infos.each do |app_info| %>
+			<div class="column">
+				<a href="/app_infos/<%= app_info.id %>">
+					<div class="profile-card">
+					  <header>
+						<img src="https://miro.medium.com/max/2400/1*gaYerWXGgC0CJezCrliYtw.png">
+						<!-- Profile -->
+						<h1> <%= app_info.first_name%> <%= app_info.last_name %></h1>
+						<h2> <%= app_info.developer_type %> </h2>
+					  </header>
+					  <!-- Bio -->
+					  <div class="profile-bio">
+						<p>
+							<strong>
+								<%= app_info.hometown %> <br>
+								<%= app_info.phrase %> <br>
+								<%= app_info.email %> <br>
+							</strong?
+						</p>
+						<div class="heart-icon">
+						  <i class="far fa-heart"></i>
+						</div>
+					  </div>
+					</div>
+				</a>
+			</div>
+		<% end %> 
+	</div>
+</div>
+<a class="btn-floating btn-large waves-effect waves-light grey" href="/app_infos/new"><i class="material-icons">add fellow</i></a>
+
+<br>
 
 <iframe
     width="350"
     height="430"
     src="https://console.dialogflow.com/api-client/demo/embedded/gingulator-io">
 </iframe
-
-<div>
-	<h2 class="center-align">Applicant Profiles</h2>
-</div>
-<div class="row">
-	<div class="cards-container">
-		<% @app_infos.each do |app_info| %>
-			<a href="/app_infos/<%= app_info.id %>">
-				<div class="col s4">
-				  <div class="card small">
-					<div class="card-image">
-					  <img class="responsive-img" src="https://pbs.twimg.com/profile_images/992829082420232192/UvlAP299_400x400.jpg" alt="Hacker Fellows photo">
-					  <span class="card-title">	<strong> <%= app_info.first_name %> <%= app_info.last_name %> </strong> </span>
-					</div>
-					<div class="card-content">
-						<%= app_info.email %> <br>
-						<%= app_info.developer_type %> <br>
-						<%= app_info.hometown %> <br>
-					</div>
-				  </div>
-				</div>
-			</a>
-		<% end %> 
-	</div>
-</div>
-
-<a class="btn-floating btn-large waves-effect waves-light grey" href="/app_infos/new"><i class="material-icons">add fellow</i></a>
-
-<br>
