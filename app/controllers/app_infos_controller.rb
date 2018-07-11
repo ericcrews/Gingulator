@@ -1,3 +1,5 @@
+require 'json'
+
 class AppInfosController < ApplicationController
   before_action :set_app_info, only: [:show, :update, :destroy]
 
@@ -11,6 +13,30 @@ class AppInfosController < ApplicationController
 	@app_info = AppInfo.find(params[:id])
   end
 
+  # POST /
+  def data
+	@app_info = AppInfo.new do |a|
+		a.first_name = params["queryResult"]["outputContexts"][1]["parameters"]["first_name"]
+		a.last_name = params["queryResult"]["outputContexts"][1]["parameters"]["last_name"]
+		a.developer_type = params["queryResult"]["outputContexts"][1]["parameters"]["dev_type"]
+		a.hometown = params["queryResult"]["outputContexts"][1]["parameters"]["hometown"]
+		a.email = params["queryResult"]["outputContexts"][1]["parameters"]["email"]
+		a.phone = params["queryResult"]["outputContexts"][1]["parameters"]["phone"]
+		a.twitter_handle = params["queryResult"]["outputContexts"][1]["parameters"]["twitter"]
+		a.university = params["queryResult"]["outputContexts"][1]["parameters"]["university"]
+		a.gpa = params["queryResult"]["outputContexts"][1]["parameters"]["gpa"]
+		a.fun_facts = params["queryResult"]["outputContexts"][1]["parameters"]["three_things"]
+		a.why_startup = params["queryResult"]["outputContexts"][1]["parameters"]["why_startup"]
+		a.phrase = params["queryResult"]["outputContexts"][1]["parameters"]["phrase"]
+	end
+	
+	if @app_info.save
+      render json: @app_info, status: :created, location: @app_info
+    else
+      render json: @app_info.errors, status: :unprocessable_entity
+    end
+  end
+	
   # POST /app_infos
   def create
     @app_info = AppInfo.new(app_info_params)

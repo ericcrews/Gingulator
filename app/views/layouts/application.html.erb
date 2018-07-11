@@ -1,3 +1,7 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <html>
   <head>
     <title>HF Application Information</title>
@@ -5,7 +9,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-	
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   
   <body>
@@ -13,10 +17,28 @@
 		<div class="nav-wrapper">
 		  <img class="brand-logo" src="https://media.creativemornings.com/uploads/user/avatar/273045/Screen_Shot_2016-10-18_at_12.21.03_PM.png">
 		  <ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li><%= link_to 'Home Page', app_infos_path %> </li>
+			<li>
+			    <%= link_to app_infos_path do %>
+					<i class="fa fa-bars">  Applicants</i>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to app_infos_path do %>
+					<i class="fa fa-home">  Home</i> 
+				<% end %>
+			</li>
 		  </ul>
 		</div>
 	</nav>
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
 	<%= yield %>
+  <% if user_signed_in? %>
+    <%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
+  <% end %>
   </body>
 </html>

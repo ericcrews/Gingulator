@@ -2,7 +2,10 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 #changed 2.5.1 -> 2.4.4 for compatibility (DK) 
-ruby '2.4.4' 
+ruby '2.5.1' 
+
+# Authentication
+gem 'devise'
 
 # Twilio SMS
 gem 'twilio-ruby'
@@ -22,7 +25,14 @@ gem 'puma', '~> 3.11'
 gem 'pg', '~> 0.18'
 # Materialize gem for design
 gem 'materialize-sass', '~> 1.0.0.rc2'
+# Bootstrap gem for design 
+gem 'bootstrap', '~> 4.1.1'
 
+
+# Use jquery as the Javascript library
+gem 'jquery-rails'
+# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+gem 'turbolinks', '~> 5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
