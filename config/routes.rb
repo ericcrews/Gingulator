@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  resources :app_infos
-  #root 'app_infos#index'
+  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' }
+  resources :app_infos 
+  root to: 'app_infos#index'
   post '/' => 'app_infos#data'
-  post 'listeners/slack'
-  post 'listeners/twilio'
 end
