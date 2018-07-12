@@ -10,7 +10,7 @@
 {
   first_name: "Julia",
   last_name: "Jones",
-  hometown: "Poughkeepsie,NJ",
+  homeftown: "Poughkeepsie,NJ",
   university: "University of Toronto",
   field: "Theatre",
   phrase: "We exist.",

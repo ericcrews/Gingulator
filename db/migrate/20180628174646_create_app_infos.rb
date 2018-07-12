@@ -4,17 +4,17 @@ class CreateAppInfos < ActiveRecord::Migration[5.2]
       t.string :first_name, null: false
       t.string :last_name, null: false
       t.string :hometown, null: false
-      t.string :email, null: false, unique: true
-      t.string :phone, null: false, unique: true
-      t.string :twitter_handle, null: false, unique: true
-      t.string :university, null: false
-      t.string :field, null: false
-      t.string :phrase, null: false
-      t.string :developer_type, null: false
-      t.string :why_startup, null: false
-      t.string :fun_facts, null: false
-      t.decimal :gpa, null: false
-	  t.string :resume, null: false
+      t.string :email, unique: true
+      t.string :phone, unique: true
+      t.string :twitter_handle, unique: true
+      t.string :university
+      t.string :field
+      t.string :phrase
+      t.string :developer_type
+      t.string :why_startup
+      t.string :fun_facts
+      t.decimal :gpa
+	  t.string :resume
 
       t.timestamps
     end
