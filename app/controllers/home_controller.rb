@@ -7,7 +7,7 @@ class HomeController < ApplicationController
 
   # GET /home
   def index
-    # @home = Home.all
+    @home = Home.all
   end
 
 
