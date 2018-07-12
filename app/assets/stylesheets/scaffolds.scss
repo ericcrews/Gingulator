@@ -1,3 +1,7 @@
+.buttons {
+  display: inline-block; 
+}
+
 .cards-container {
   align-content: center;
 }
@@ -95,6 +99,7 @@
   color: #d32f2f ;
   transform: scale(1.2);
 }
+
 body {
   background-color: #010819;
   color: #333;
