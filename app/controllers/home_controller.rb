@@ -3,7 +3,7 @@ class HomeController < ApplicationController
 
   # This allows Dialogflow to post to the Gingulator without authentication.
   # Probably not a good idea to do this in an actual app.
-  skip_before_action :authenticate_user!, only: [:data]
+  skip_before_action :authenticate_user!, only: [:index]
 
   # GET /home
   def index
