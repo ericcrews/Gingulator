@@ -1,0 +1,110 @@
+/*Home Page CSS setup*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+      background-color: #010819;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+  border: 2px #545a6a solid;
+  margin: 10px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #2b313f;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 2.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.gingbot-wrapper{
+  font-size: 16px;
+  font-weight: lighter;
+  background-color: #545a6a;
+  padding: 20px;
+}
+
+.gingbot{
+      width: 500px;
+      height: 550px;
+}
+
+.App-avatar {
+      width: 80px !important;
+      height: 80px !important;
+      display: inline-block !important;
+}
+
+.App-footer{
+      background-color: #2b313f;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+}
+
+/*MUI  integration*/
+.Avatar-wrapper {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      align-items: center;
+      user-select: none;
+      border-radius: 50%;
+      justify-content: center;
+}
+
+.Home-avatar {
+   width: 100%;
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+}
+
+.footer-wrapper {
+      padding-left: 24px;
+      padding-right: 24px;
+      display: flex;
+      position: relative;
+      min-height: 56px;
+      align-items: center;
+}
+/*Custom media queries*/
+@media screen and (max-width: 760px) {
+      .gingbot{
+            width: 250px;
+            height: 350px;
+      }
+      .footer-wrapper {
+            padding-left: 16px;
+           padding-right: 16px;
+           min-height: 48px
+      }
+}
+@media screen and (max-width: 760px) {
+      .footer-wrapper {
+            padding-left: 16px;
+           padding-right: 16px;
+
+      }
+}
