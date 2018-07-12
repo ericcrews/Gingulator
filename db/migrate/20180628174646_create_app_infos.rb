@@ -13,8 +13,8 @@ class CreateAppInfos < ActiveRecord::Migration[5.2]
       t.string :developer_type
       t.string :why_startup
       t.string :fun_facts
-      t.decimal :gpa
 	  t.string :resume
+      t.decimal :gpa
 
       t.timestamps
     end

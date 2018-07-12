@@ -10,7 +10,7 @@
 {
   first_name: "Julia",
   last_name: "Jones",
-  homeftown: "Poughkeepsie,NJ",
+  hometown: "Poughkeepsie,NJ",
   university: "University of Toronto",
   field: "Theatre",
   phrase: "We exist.",
@@ -24,4 +24,9 @@
   field: "Musical Performance",
   phrase: "Maluma, bb",
   developer_type: "back-end"
+}])
+
+User.create!([{
+  email: "admin@admin.com",
+  password: "password"
 }])

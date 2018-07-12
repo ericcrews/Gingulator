@@ -16,19 +16,19 @@ ActiveRecord::Schema.define(version: 2018_07_09_195258) do
   enable_extension "plpgsql"
 
   create_table "app_infos", force: :cascade do |t|
-    t.string "first_name", null: false
-    t.string "last_name", null: false
-    t.string "hometown", null: false
-    t.string "email", null: false
-    t.string "phone", null: false
-    t.string "twitter_handle", null: false
-    t.string "university", null: false
-    t.string "field", null: false
-    t.string "phrase", null: false
-    t.string "developer_type", null: false
-    t.string "why_startup", null: false
-    t.string "fun_facts", null: false
-    t.decimal "gpa", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "hometown"
+    t.string "email"
+    t.string "phone"
+    t.string "twitter_handle"
+    t.string "university"
+    t.string "field"
+    t.string "phrase"
+    t.string "developer_type"
+    t.string "why_startup"
+    t.string "fun_facts"
+    t.decimal "gpa"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
