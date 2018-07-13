@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
+<%= stylesheet_link_tag "home" %>
+
 
 <div class="App">
-      <header class="App-header">
+      <div header="App-header">
             <div class='Avatar-wrapper'>
                   <img alt="Sam Ging"
-                            src="../../assets/images/samGing.jpeg"
+                            src="https://static1.squarespace.com/static/56daeebfc6fc08b99108e9db/t/572b81d359827e596ffa1e3b/1462469087108/?format=300w"
                             class="Home-avatar">
             </div>
-            <h1 class="App-title">Gingulator</h1>
-            <a class = 'waves-effect waves-light btn'
-                  href='/login'>login</a>
+            <div class="app-title"><h1>Gingulator</h1></div>
       </header>
       <div class="App-intro">
             <p>Welcome to the Gingulator!</p>
@@ -23,7 +23,13 @@
                         height="450px"
                         src="https://console.dialogflow.com/api-client/demo/embedded/gingulator-io">
           </iframe>
+		  <br>
+		  <div class = "login-button">
+			  <a class = 'waves-effect waves-light btn'
+				  href='/login'>login</a>
+		  </div>
       </div>
+
       <footer class="App-footer">
             <div class='footer-wrapper'>
                   <p>Copyright &copy; <i>Bedevilled Horse, Hacker Fellows 2018</i></p>

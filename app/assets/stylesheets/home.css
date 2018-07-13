@@ -60,8 +60,8 @@ body {
 
 /*MUI  integration*/
 .Avatar-wrapper {
-      width: 40px;
-      height: 40px;
+      width: 100px;
+      height: 100px;
       display: flex;
       position: relative;
       overflow: hidden;
@@ -71,7 +71,8 @@ body {
       align-items: center;
       user-select: none;
       border-radius: 50%;
-      justify-content: center;
+	  margin-left: 574px;
+      margin-top: 20px;
 }
 
 .Home-avatar {
