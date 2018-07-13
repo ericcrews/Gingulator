@@ -37,12 +37,6 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
   <%= yield %>
-  <iframe
-     width="350"
-     height="430"
-     style="float:right"
-     src="https://console.dialogflow.com/api-client/demo/embedded/gingulator-io">
-  </iframe>
   <% if user_signed_in? %>
     <%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
   <% end %>
