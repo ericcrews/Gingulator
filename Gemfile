@@ -22,7 +22,7 @@ gem 'puma', '~> 3.11'
 gem 'pg', '~> 0.18'
 # Materialize gem for design
 gem 'materialize-sass', '~> 1.0.0.rc2'
-# Bootstrap gem for design 
+# Bootstrap gem for design
 gem 'bootstrap', '~> 4.1.1'
 # Use for login page routes
 gem 'devise'
