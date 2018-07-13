@@ -25,6 +25,7 @@ class AppInfosController < ApplicationController
 		a.developer_type = params["queryResult"]["outputContexts"][1]["parameters"]["dev_type"]
 		a.hometown = params["queryResult"]["outputContexts"][1]["parameters"]["hometown"]
 		a.email = params["queryResult"]["outputContexts"][1]["parameters"]["email"]
+		a.field = params["queryResult"]["outputContexts"][1]["parameters"]["major"]
 		a.phone = params["queryResult"]["outputContexts"][1]["parameters"]["phone"]
 		a.twitter_handle = params["queryResult"]["outputContexts"][1]["parameters"]["twitter"]
 		a.university = params["queryResult"]["outputContexts"][1]["parameters"]["university"]
