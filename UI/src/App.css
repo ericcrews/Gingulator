@@ -64,6 +64,11 @@ body {
       color: white;
       font-weight: bold;
 }
+.login-button{
+      background-color: #545a6a !important;
+      color: white !important;
+      margin-bottom: 15px !important;
+}
 @media screen and (max-width: 760px) {
       .gingbot{
             width: 250px;
